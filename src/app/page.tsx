@@ -1,3 +1,4 @@
+import LightDarkModeButton from "@/components/LightDarkModeButton";
 import Image from "next/image";
 
 export default function Home() {
@@ -5,48 +6,18 @@ export default function Home() {
     <div className="flex flex-row min-h-screen items-center justify-center">
       <nav>
         <div className="fixed top-8 left-8 flex gap-[24px]">
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/light-mode.png"
-              alt="Light mode icon"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/dark-mode.png"
-              alt="Dark mode icon"
-              width={30}
-              height={30}
-            />
-          </a>
-          <a
-            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              aria-hidden
-              src="/random-mode.png"
-              alt="Random mode icon"
-              width={30}
-              height={30}
-            />
-          </a>
+          <LightDarkModeButton
+            imageSrc="/light-mode.png"
+            imageAlt="Light mode icon"
+          />
+          <LightDarkModeButton
+            imageSrc="/dark-mode.png"
+            imageAlt="Dark mode icon"
+          />
+          <LightDarkModeButton
+            imageSrc="/random-mode.png"
+            imageAlt="Random mode icon"
+          />
         </div>
         <div className="fixed top-8 right-8 flex gap-[24px]">
           <h2 className="font-semibold text-2xl">Blog</h2>
