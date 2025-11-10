@@ -1,39 +1,21 @@
+import Header from "@/components/Header";
 import LightDarkModeButton from "@/components/LightDarkModeButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex flex-row min-h-screen items-center justify-center">
-      <nav>
-        <div className="fixed top-8 left-8 flex gap-[24px]">
-          <LightDarkModeButton
-            imageSrc="/light-mode.png"
-            imageAlt="Light mode icon"
-          />
-          <LightDarkModeButton
-            imageSrc="/dark-mode.png"
-            imageAlt="Dark mode icon"
-          />
-          <LightDarkModeButton
-            imageSrc="/random-mode.png"
-            imageAlt="Random mode icon"
-          />
-        </div>
-        <div className="fixed top-8 right-8 flex gap-[24px]">
-          <h2 className="font-semibold text-2xl">Blog</h2>
-        </div>
-      </nav>
+      <Header />
       <main className="grid grid-cols-6 grid-rows-3 gap-4">
         <div className="col-span-4 col-start-2 content-end justify-items-center pl-12">
           <h1 className="font-bold text-7xl">Miranda Chan</h1>
         </div>
         <div className="col-span-1 col-start-2 row-span-2 content-center justify-items-end">
           <div className="flex flex-col gap-[60px]">
-            <a
+            <Link
+              href="/about"
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Image
                 aria-hidden
@@ -43,12 +25,10 @@ export default function Home() {
                 height={60}
               />
               <h2 className="text-2xl">About</h2>
-            </a>
-            <a
+            </Link>
+            <Link
+              href="/experience"
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
             >
               <Image
                 aria-hidden
@@ -58,7 +38,7 @@ export default function Home() {
                 height={60}
               />
               <h2 className="text-2xl">Experience</h2>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col-span-2 row-span-2 col-start-3">
@@ -71,11 +51,9 @@ export default function Home() {
         </div>
         <div className="col-span-2 row-span-2 col-start-5 content-center">
           <div className="flex flex-col gap-[60px]">
-            <a
+            <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/projects"
             >
               <Image
                 aria-hidden
@@ -85,12 +63,10 @@ export default function Home() {
                 height={60}
               />
               <h2 className="text-2xl">Projects</h2>
-            </a>
-            <a
+            </Link>
+            <Link
               className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/outside-of-coding"
             >
               <Image
                 aria-hidden
@@ -100,14 +76,14 @@ export default function Home() {
                 height={50}
               />
               <h2 className="text-2xl">Outside of coding</h2>
-            </a>
+            </Link>
           </div>
         </div>
       </main>
       <footer className="fixed bottom-8 right-8 flex gap-[24px]">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://github.com/mcctm"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -121,7 +97,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/miranda-chan/"
           target="_blank"
           rel="noopener noreferrer"
         >
