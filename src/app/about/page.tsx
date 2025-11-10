@@ -7,7 +7,7 @@ export default function AboutPage() {
       <div className="items-center justify-center">
         <main className="grid grid-cols-3 grid-rows-2 gap-8">
           <div className="col-span-2 col-start-1 row-start-1 content-end justify-items-start pl-12">
-            <h1 className="font-bold text-5xl">Hi👋 I'm Miranda!</h1>
+            <h1 className="font-bold text-5xl">Hi👋 I&apos;m Miranda!</h1>
           </div>
           <div className="col-span-2 col-start-1 row-start-2 pl-12">
             <p className="mb-4">
