@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import LightDarkModeButton from "@/components/LightDarkModeButton";
 import Image from "next/image";
 import Link from "next/link";
 
