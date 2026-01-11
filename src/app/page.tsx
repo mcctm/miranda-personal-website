@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main className="grid grid-cols-6 grid-rows-3">
         <div className="col-span-4 col-start-2 content-center justify-items-center pl-12">
-          <h1 className="font-bold text-7xl">Miranda Chan</h1>
+          <h1 className="font-bold text-8xl">Miranda Chan</h1>
         </div>
         <div className="col-span-1 col-start-2 row-span-2 content-center justify-items-end">
           <div className="flex flex-col gap-[60px]">
@@ -31,12 +31,12 @@ export default function Home() {
             >
               <Image
                 aria-hidden
-                src="/experience.png"
-                alt="Experience icon"
+                src="/words.png"
+                alt="Words icon"
                 width={60}
                 height={60}
               />
-              <h2 className="text-2xl">Experience</h2>
+              <h2 className="text-2xl">Words</h2>
             </Link>
           </div>
         </div>
