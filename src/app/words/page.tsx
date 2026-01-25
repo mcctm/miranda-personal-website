@@ -3,9 +3,7 @@ export default function WordsPage() {
     <>
       <div className="flex flex-col justify-center">
         <div>
-          <h1 className="font-bold text-6xl mb-10 font-dm-serif">
-            Brain Dump 🧠
-          </h1>
+          <h1 className="font-bold text-6xl mb-10">Brain Dump 🧠</h1>
           <h2 className="text-2xl">A place for reflections and daydreams ☁️</h2>
         </div>
         <div className="my-10 h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>

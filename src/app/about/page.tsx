@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <>
-      <div className="items-center justify-center">
+      <div>
         <main className="grid grid-cols-3 grid-rows-2">
           <div className="col-span-2 pl-15">
             <h1 className="font-bold text-6xl mb-20 font-dm-serif">
@@ -38,8 +38,8 @@ export default function AboutPage() {
               aria-hidden
               src="/about_profilepic.png"
               alt="Profile picture"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
             />
           </div>
         </main>
